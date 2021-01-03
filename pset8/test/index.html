@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+    <head>
+        <title>
+            Hello
+        </title>
+    </head>
+
+    <script>
+    // function alertGreet()
+    // {
+    //     let name = document.querySelector("#name").value;
+    //     if (name === "")
+    //     {
+    //         name = "world"
+    //     }
+    //     alert("Hello, " + name + "!");
+    // }
+
+    function textGreet()
+    {
+        let name = document.querySelector("#name").value;
+        if (name === "")
+        {
+            name = "world"
+        }
+        document.querySelector('#hello').innerHTML = "Hello, " + name + "!";
+    }
+    </script>
+
+    <body>
+        <form onsubmit="textGreet(); return false;">
+            <input type="text" id="name">
+            <input type="submit">
+        </form>
+
+        <div id="hello">
+            Hello!
+        </div>
+    </body>
+</html>
